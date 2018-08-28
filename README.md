@@ -6,6 +6,17 @@
 
 Same code as UMAD, but with a :white_check_mark:
 
+## Screenshots
+
+### DEP
+![Screenshot DEP](/images/ss_dep.png?raw=true)
+
+### Manual
+![Screenshot Manual](/images/ss_manual.png?raw=true)
+
+### UAMDM
+![Screenshot UAMDM](/images/ss_uamdm.png?raw=true)
+
 ## Building this package
 You will need to use [munki-pkg](https://github.com/munki/munki-pkg) to build this package
 
@@ -262,14 +273,3 @@ A custom uamdm screenshot path. Alternatively, just replace the included uamdm_s
 <string>--uasspath</string>
 <string>/Some/Custom/Path/uamdm_ss.png</string>
 ```
-
-## Screenshots
-
-### DEP
-![Screenshot DEP](/images/ss_dep.png?raw=true)
-
-### Manual
-![Screenshot Manual](/images/ss_manual.png?raw=true)
-
-### UAMDM
-![Screenshot UAMDM](/images/ss_uamdm.png?raw=true)
