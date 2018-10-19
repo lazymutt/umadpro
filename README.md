@@ -1,8 +1,8 @@
 # UMAD Pro
-[U]ser-facing
-[M]DM
-[A]pproval
-[D]ialog
+**U**ser-facing
+**M**DM
+**A**pproval
+**D**ialog
 
 Same code as UMAD, but with a :white_check_mark:
 
@@ -21,7 +21,7 @@ Same code as UMAD, but with a :white_check_mark:
 ![Simplified Diagram](/images/umad_diagram.png?raw=true)
 
 ## Building this package
-You will need to use [munki-pkg](https://github.com/munki/munki-pkg) to build this package
+You will need to use [munki-pkg](https://github.com/munki/munki-pkg) to build this package.
 
 ## Credits
 This tool would not be possible without [nibbler](https://github.com/pudquick/nibbler), written by [Michael Lynn](https://twitter.com/mikeymikey)
@@ -30,7 +30,7 @@ This tool would not be possible without [nibbler](https://github.com/pudquick/ni
 Because of the way git works, umad will not contain the `Logs` folder required for the postinstall to complete.
 
 In order to create a properly working package, you will need to run the following command:
-`munkipkg --sync /path/to/cloned_repo/mdm/umad`
+`munkipkg --sync /path/to/cloned_repo/mdm/umad`.
 
 ## Options
 Essentially every component of the UI is customizable, all through the LaunchAgent.
@@ -43,7 +43,7 @@ Cut off date in UTC.
 ```
 
 ### Cut off date warning
-This is the number, in days, of when to start the initial UI warning. When this set of days passes, the user will be required to hit an "I Understand" button, followed by the "Close" button to exit out of the UI.
+This is the number, in days, of when to start the initial UI warning. When this set of days passes, the user will be required to click the **I Understand** button, followed by the **Close** button to exit out of the UI.
 ```xml
 <string>--cutoffdatewarning</string>
 <string>14</string>
@@ -59,7 +59,7 @@ This is the bolded portion of the UI towards the top.
 ### DEP failure text
 If a user has a DEP capable device, but they are passed the enrollment window, they will have an option to manually enroll.
 
-This is the first set of text above the enrollment button.
+This is the first set of text above the **Manual Enrollment** button.
 ```xml
 <string>--depfailuretext</string>
 <string>Not getting this notification?</string>
@@ -68,21 +68,21 @@ This is the first set of text above the enrollment button.
 ### DEP failure subtext
 If a user has a DEP capable device, but they are passed the enrollment window, they will have an option to manually enroll.
 
-This is the second set of text above the enrollment button.
+This is the second set of text above the **Manual Enrollment** button.
 ```xml
 <string>--depfailuresubtext</string>
 <string>You can also enroll manually below:</string>
 ```
 
 ### Enable enrollment button
-Always show the manual enrollment button, DEP or not.
+Always show the **Manual Enrollment** button, DEP or not.
 
 ```xml
 <string>--enableenrollmentbutton</string>
 ```
 
 ### Logo path
-A custom logo path. Alternatively, just replace the included company_logo.png
+A custom logo path. Alternatively, just replace the included `company_logo.png`.
 ```xml
 <string>--logopath</string>
 <string>/Some/Custom/Path/company_logo.png</string>
@@ -101,7 +101,7 @@ This is the bolded text that takes place of the DEP or UAMDM screenshot.
 ### Manual enrollment h1 text
 If a user does not have a DEP capable device, they will have the option to manually enroll.
 
-This is the first set of text above the enrollment button.
+This is the first set of text above the **Manual Enrollment** button.
 
 ```xml
 <string>--manualenrollh1text</string>
@@ -111,7 +111,7 @@ This is the first set of text above the enrollment button.
 ### Manual enrollment h2 text
 If a user does not have a DEP capable device, they will have the option to manually enroll.
 
-This is the second set of text above the enrollment button.
+This is the second set of text above the **Manual Enrollment** button.
 
 ```xml
 <string>--manualenrollh2text</string>
@@ -119,21 +119,21 @@ This is the second set of text above the enrollment button.
 ```
 
 ### Manual enrollment URL
-This is the URL to open for the Manual Enrollment button.
+This is the URL to open for the **Manual Enrollment** button.
 ```xml
 <string>--manualenrollmenturl</string>
 <string>https://apple.com</string>
 ```
 
 ### More info URL
-This is the URL to open for the Manual Enrollment button.
+This is the URL to open for the **Manual Enrollment** button.
 ```xml
 <string>--moreinfourl</string>
 <string>https://google.com</string>
 ```
 
 ### Nag screenshot path
-A custom nag screenshot path. Alternatively, just replace the included nag_ss.png
+A custom nag screenshot path. Alternatively, just replace the included `nag_ss.png`.
 ```xml
 <string>--nagsspath</string>
 <string>/Some/Custom/Path/nag_ss.png</string>
@@ -177,7 +177,7 @@ This is the text right under the main title.
 ### System Preferences H1 text
 Should the user have a 10.13.4+ device that is not User Approved MDM, they will be notified that they need to approve the MDM.
 
-This is the first set of text above the system preferences button.
+This is the first set of text above the **Open System Preferences** button.
 ```xml
 <string>--sysprefsh1text</string>
 <string>Want this box to go away?</string>
@@ -186,7 +186,7 @@ This is the first set of text above the system preferences button.
 ### System Preferences H2 text
 Should the user have a 10.13.4+ device that is not User Approved MDM, they will be notified that they need to approve the MDM.
 
-This is the second set of text above the system preferences button.
+This is the second set of text above the **Open System Preferences** button.
 ```xml
 <string>--sysprefsh2text</string>
 <string>Open System Preferences and approve Device Management.</string>
@@ -274,7 +274,7 @@ This is the text for the third paragraph on the user Approved MDM UI.
 ```
 
 ### User Approved MDM screenshot path
-A custom uamdm screenshot path. Alternatively, just replace the included uamdm_ss.png.png
+A custom uamdm screenshot path. Alternatively, just replace the included `uamdm_ss.png`.
 ```xml
 <string>--uasspath</string>
 <string>/Some/Custom/Path/uamdm_ss.png</string>
